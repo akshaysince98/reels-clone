@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.insta_img {
+  height: 3rem;
+}
+
+.profile_img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload_container {
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.upload_container:hover{
+  transform: scale(1.05);
+}
+
+.profileLogout {
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn {
+  height: 3rem;
+  margin-left: 20px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.videos{
+  height: 500px;
+  width: 500px;
+  overflow-y: auto;
+
+}

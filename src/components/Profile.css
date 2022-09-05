@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    height: 5rem;
+    border-bottom: 2px solid gray;
+}
+
+.pimg {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.details {
+    text-align: center;
+}
+
+.content {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.main>* {
+    height: 80%;
+}
+
+.bold-text{
+    font-weight: bold;
+    color: black;
+}
+
+.pimg_container{
+    align-items: center;
+}
