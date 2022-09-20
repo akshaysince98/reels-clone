@@ -2,7 +2,7 @@ import './login.css'
 import React from 'react'
 import { useState } from 'react';
 import { auth } from '../Firebase';
-import { signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'firebase/auth';
+import { signInWithEmailAndPassword,  onAuthStateChanged } from 'firebase/auth';
 import { useEffect } from 'react';
 
 
@@ -55,8 +55,8 @@ function Login() {
   return (
     <>
       {
-        error != "" ? <h1>{error}</h1> :
-          loader == true ? <h1>...Loading</h1> :
+        error !== "" ? <h1>{error}</h1> :
+          loader === true ? <h1>...Loading</h1> :
             user != null ? <></> :
               <>
                 <div className='login-box'>
