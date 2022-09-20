@@ -1,3 +1,4 @@
+import './login.css'
 import React from 'react'
 import { useState } from 'react';
 import { auth } from '../Firebase';
@@ -58,13 +59,18 @@ function Login() {
           loader == true ? <h1>...Loading</h1> :
             user != null ? <></> :
               <>
-                <input onChange={trackEmail} type="email" value={email} placeholder="Enter Email" />
-                <br />
-                <input onChange={trackPassword} type="password" value={password} placeholder="Password" />
-                <br />
-                <button onClick={login}>Login</button>
-                <br />
-                Don't have an account? <a href="./signup">Signup</a>
+                <div className='login-box'>
+                  <form className='inner'>
+
+                  <input onChange={trackEmail} type="email" value={email} placeholder="Enter Email" />
+                  <br />
+                  <input onChange={trackPassword} type="password" value={password} placeholder="Password" />
+                  <br />
+                  <button onClick={login}>Login</button>
+                  <br />
+                  Don't have an account? <a href="./signup">Signup</a>
+                  </form>
+                </div>
               </>
 
       }
